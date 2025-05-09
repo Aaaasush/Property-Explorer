@@ -34,8 +34,4 @@ p {
 
 .card-header {
     flex: 1;
-    text-align: center;
-    padding: 8px;
-    border: 1px solid #eee;
-    background-color: #f8f9fa;
 }
