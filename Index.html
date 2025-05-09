@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/2a56a7992b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Property Explorer</h1>
+        <p>Browse and explore property data with detailed information on spaces, features and rent.</p>
+    </header>
+
+    <div class="card">
+        <div class="flex-container">
+            <div class="flex-container">
+                <i class="fa-regular fa-building"></i>
+                <h4 style="margin-left: 10px;">Sunset Plaza</h4>
+            </div>
+            <div onclick="myFun(Fhide)">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <div id="Fhide" style="display: block;">
+            <div class="flex-container" style="margin-top: 20px;">
+                <div>
+                    <p>Features</p>
+                    <div class="d-flex flex-wrap">
+                        <span class="border rounded p-1 m-0">24/7 Security</span>
+                        <span class="border rounded p-1 m-0">High-Speed Internet</span>
+                        <span class="border rounded p-1 m-0">Parking Available</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Highlights</p>
+                    <span class="border bg-light rounded p-1 m-0 ">LEED Certified</span>
+                    <span class="border bg-light rounded p-1 m-0 ">Recently Renovated</span>
+                </div>
+
+                <div class="text-white">
+                    <p class="text-black">Transportation</p>
+                    <span class="border bg-primary rounded p-1 m-0">Subway Nearby</span>
+                    <span class="border bg-primary rounded p-1 m-0">Bus Stop at Entrance</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">Spaces</p>
+
+            <div class="card">
+                <div class="flex-container">
+                    <p>Office Space A</p>
+                    <div onclick="myFun(hide)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div id="hide" style="display: block;">
+                    <div class="table">
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">Month</div>
+                            <div class="card-header" style="text-align: right;">Amount</div>
+                        </div>
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">January</div>
+                            <div class="card-header" style="text-align: right;">$1,000</div>
+                        </div>
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">February</div>
+                            <div class="card-header" style="text-align: right;">$1,200</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="flex-container">
+                    <p>Office Space B</p>
+                    <div onclick="myFun(bhide)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div id="bhide" style="display: block;">
+                    <div class="table">
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">Month</div>
+                            <div class="card-header" style="text-align: right;">Amount</div>
+                        </div>
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">January</div>
+                            <div class="card-header" style="text-align: right;">$1,000</div>
+                        </div>
+                        <div class="row">
+                            <div class="card-header" style="text-align: left;">February</div>
+                            <div class="card-header" style="text-align: right;">$1,200</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

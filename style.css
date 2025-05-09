@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2%;
+    font-family: Arial, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.card {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.table .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.card-header {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #eee;
+    background-color: #f8f9fa;
+}
