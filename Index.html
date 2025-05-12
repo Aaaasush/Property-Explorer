@@ -7,23 +7,26 @@
     <title>Task</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/2a56a7992b.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body >
-    <header>
-        <h1>Property Explorer</h1>
+<body class="" style="margin: 1%;" >
+    
+       <head>
+         <h1>Property Explorer</h1>
         <p>Browse and explore property data with detailed information on spaces, features and rent.</p>
-    </header>
+    
+       </head>
 
-    <div class="card">
+    <div>
+      <div class="card" style="border-radius: 15px;">
         <div class="flex-container">
-            <div class="flex-container">
+            <div class="flex-container" >
                 <i class="fa-regular fa-building"></i>
-                <h4 style="margin-left: 10px;">Sunset Plaza</h4>
+                <h4 style="margin-left: 10px;" id="tittle">Sunset Plaza</h4>
             </div>
             <div onclick="myFun(Fhide)">
                 <i class="fa-solid fa-chevron-down"></i>
@@ -31,30 +34,31 @@
         </div>
 
         <div id="Fhide" style="display: block;">
-            <div class="flex-container" style="margin-top: 20px;">
+            <div class="flex-container1" style="margin-top: 20px;">
                 <div>
-                    <p>Features</p>
-                    <div class="d-flex flex-wrap">
-                        <span class="border rounded p-1 m-0">24/7 Security</span>
-                        <span class="border rounded p-1 m-0">High-Speed Internet</span>
-                        <span class="border rounded p-1 m-0">Parking Available</span>
+                    <p style="text-align: left; color: gray;font-size: medium;">Features</p>
+                    <div >
+                        <span class="border  p-1 m-1 px-2" style="border-radius:20px;" id="feature1"></span>
+                        <span class="border  p-1 m-1 px-2" style="border-radius:20px;" id ="feature2"> </span>
+                        <span class="border  p-1 m-1 px-2" style="border-radius:20px;" id ="feature3"> </span>
                     </div>
                 </div>
 
-                <div>
-                    <p>Highlights</p>
-                    <span class="border bg-light rounded p-1 m-0 ">LEED Certified</span>
-                    <span class="border bg-light rounded p-1 m-0 ">Recently Renovated</span>
+                <div >
+                    <p style="text-align: left; color: gray;font-size: medium;">Highlights</p>
+                    <span class="border rouned p-1 m-1 px-3" style="border-radius: 15px; background-color:rgb(251, 251, 251);" id="highlight1"></span>
+                    <span class="border  rouned p-1 m-1 px-3" style="border-radius: 15px; background-color:rgb(251, 251, 251);" id="highlight2"></span>
+
                 </div>
 
-                <div class="text-white">
-                    <p class="text-black">Transportation</p>
-                    <span class="border bg-primary rounded p-1 m-0">Subway Nearby</span>
-                    <span class="border bg-primary rounded p-1 m-0">Bus Stop at Entrance</span>
+                <div style="margin-right:2% ;" >
+                    <p  style="text-align: left; color: gray;font-size: medium;">Transportation</p>
+                    <span class="border p-1 m-2 px-2"  style="border-radius: 15px; background-color: rgb(5, 128, 252); color: white;" id ="transportation_opt1" > </span>
+                    <span class="border p-1 m-2 px-2" style="border-radius: 15px; background-color: rgb(5, 128, 252); color:white;" id ="transportation_opt2"> </span>
                 </div>
             </div>
 
-            <p style="margin-top: 20px;">Spaces</p>
+            <p style="text-align: left; margin-top: 20px;">Spaces</p>
 
             <div class="card">
                 <div class="flex-container">
@@ -66,16 +70,16 @@
                 <div id="hide" style="display: block;">
                     <div class="table">
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">Month</div>
-                            <div class="card-header" style="text-align: right;">Amount</div>
+                            <div class="card-header" style="font-size: small; color:rgb(135, 131, 131); text-align: left;">Month</div>
+                            <div class="card-header" style="font-size: small; color:rgb(135, 131, 131);text-align: right;">Amount</div>
                         </div>
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">January</div>
-                            <div class="card-header" style="text-align: right;">$1,000</div>
+                            <div class="card-header" style="text-align: left; background-color: white;" id="OfficeA_month1"></div>
+                            <div class="card-header" style="text-align: right; background-color: white;" id="OfficeA_month1_Amount1"></div>
                         </div>
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">February</div>
-                            <div class="card-header" style="text-align: right;">$1,200</div>
+                            <div class="card-header" style="text-align: left;  background-color: white;"  id="OfficeA_month2"></div>
+                            <div class="card-header" style="text-align: right;  background-color: white;"id="OfficeA_month2_Amount2"></div>
                         </div>
 
                     </div>
@@ -93,16 +97,16 @@
                 <div id="bhide" style="display: block;">
                     <div class="table">
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">Month</div>
-                            <div class="card-header" style="text-align: right;">Amount</div>
+                            <div class="card-header" style="font-size: small; color:rgb(135, 131, 131);text-align: left;">Month</div>
+                            <div class="card-header" style="font-size: small; color:rgb(135, 131, 131);text-align: right;">Amount</div>
                         </div>
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">January</div>
-                            <div class="card-header" style="text-align: right;">$1,000</div>
+                            <div class="card-header" style="text-align: left;  background-color: white;" id="OfficeB_month1"></div>
+                            <div class="card-header" style="text-align: right;  background-color: white;"id="OfficeB_month1_Amount1"></div>
                         </div>
                         <div class="row">
-                            <div class="card-header" style="text-align: left;">February</div>
-                            <div class="card-header" style="text-align: right;">$1,200</div>
+                            <div class="card-header" style="text-align: left;  background-color: white;" id="OfficeB_month2"></div>
+                            <div class="card-header" style="text-align: right; background-color: white;"id="OfficeB_month2_Amount2"></div>
                         </div>
 
                     </div>
@@ -112,6 +116,10 @@
 
         </div>
     </div>
+      
+    </div>
+   
+  
 </body>
 
 </html>

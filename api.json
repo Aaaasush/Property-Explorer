@@ -1,0 +1,48 @@
+[
+    {
+        "tittle": "Sunrise Plaza",
+        "body": {
+            "Featres": [
+                "24/7 Security",
+                "High-Speed Internet",
+                "Parking Available"
+            ],
+            "Highlights": [
+                "LEED Certified",
+                "Recently Renovated"
+            ],
+            "Transportation": [
+                "Subway",
+                "Bus Stop at Entrance"
+            ],
+            "Properties": [
+                {
+                    "office Space A": {
+                        "tittle":"Office A",
+                        "Month": [
+                            "January",
+                            "February"
+                        ],
+                        "Ammount": [
+                            "$1,000",
+                            "$1,200"
+                        ]
+                    }
+                },
+                {
+                    "office Space B": {
+                        "tittle":"Office Space B",
+                        "Month": [
+                            "January",
+                            "February"
+                        ],
+                        "Ammount": [
+                            "$1,000",
+                            "$1,200"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]
